@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Anime | Accuel</title>
+  <link rel="icon" href="./IMG/logo_transparent_flavion.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+  <nav class="navbar">
+    <a href="#" class="logo" style="width: 50px;"><img src="./img/logo_transparent.png"></a>
+    <div class="nav-links ">
+      <ul>
+        <a class="text-l">Online Corps</a>
+        <li><a class="active" href="./Index.html" href="#home">Accueil</a></li>
+        <li><a href="./Food-Anime/Accueil.html" href="#recette">Food-Anime</a></li>
+      </ul>
+    </div>
+    <img src="./img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+  </nav>
+<body>
+  <!-- Nouveaux <body>-->
+  <header>
+    <div>
+      <br>
+    </div>
+  </header>
+
+  
+  <footer>
+    <p>&copy; 2024 <a style="color: black;" href="https://online-corps.fr">Online-Corps.fr</a>. Tous droits réservés.</p>
+  </footer>
+  
+</body>
+
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
+</html>
