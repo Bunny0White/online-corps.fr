@@ -130,6 +130,7 @@ footer {
 
 	.navbar .menu-hamburger {
 		display: block;
+		margin-top: -50px;
 	}
 
 	.nav-links {
@@ -170,7 +171,7 @@ footer {
 
 
 	.logo {
-		margin-top: 17px;
+		margin-top: -15px;
 		margin-left: 30px;
 	}
 
