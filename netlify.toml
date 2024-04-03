@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/*"
+  to = "/error404
+  status = 404
+  force = false
+  query = {path = ":path"}
