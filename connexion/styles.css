@@ -17,9 +17,9 @@ body {
 
 .logo img {
     position: fixed; /* Conservez le positionnement fixe */
-    top: 10px; /* Assurez-vous qu'il soit tout en haut */
-    left: 10px; /* Alignez-le à gauche */
-    width: 120px; /* Taille du logo */
+    top: 0; /* Assurez-vous qu'il soit tout en haut */
+    left: 0; /* Alignez-le à gauche */
+    width: 200px; /* Taille du logo */
     margin: 0; /* Ajustez les marges si nécessaire */
     z-index: 1002; /* Assurez-vous qu'il soit au-dessus de la navbar */
 }
@@ -86,8 +86,6 @@ body {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		margin-right: -140px;
-		margin-top: -20px;
 	}
 	
 	.navbar .nav-links ul li {

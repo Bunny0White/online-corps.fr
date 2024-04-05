@@ -17,9 +17,9 @@ body {
 
 .logo img {
     position: fixed; /* Conservez le positionnement fixe */
-    top: 10px; /* Assurez-vous qu'il soit tout en haut */
-    left: 10px; /* Alignez-le à gauche */
-    width: 120px; /* Taille du logo */
+    top: 0; /* Assurez-vous qu'il soit tout en haut */
+    left: 0; /* Alignez-le à gauche */
+    width: 200px; /* Taille du logo */
     margin: 0; /* Ajustez les marges si nécessaire */
     z-index: 1002; /* Assurez-vous qu'il soit au-dessus de la navbar */
 }
@@ -86,8 +86,6 @@ body {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		margin-right: -140px;
-		margin-top: -20px;
 	}
 	
 	.navbar .nav-links ul li {
@@ -129,7 +127,7 @@ label {
   display: block;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
   width: 100%;
   padding: 10px;
   margin: 10px 0 20px 0;
@@ -154,6 +152,23 @@ input[type="text"], input[type="password"] {
 .button-17:hover {
   background-color: #ba0000;
 }
+
+.button-17, .button-inscription {
+  background-color: #d10000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-17:hover, .button-inscription:hover {
+  background-color: #ba0000;
+}
+
 
 .forgot-password {
   display: block;

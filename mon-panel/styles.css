@@ -17,9 +17,9 @@ body {
 
 .logo img {
     position: fixed; /* Conservez le positionnement fixe */
-    top: 10px; /* Assurez-vous qu'il soit tout en haut */
-    left: 10px; /* Alignez-le à gauche */
-    width: 120px; /* Taille du logo */
+    top: 0; /* Assurez-vous qu'il soit tout en haut */
+    left: 0; /* Alignez-le à gauche */
+    width: 200px; /* Taille du logo */
     margin: 0; /* Ajustez les marges si nécessaire */
     z-index: 1002; /* Assurez-vous qu'il soit au-dessus de la navbar */
 }
@@ -36,38 +36,61 @@ body {
     margin: 0;
 	margin-top: 50px;
     margin-right: 150px;
-    padding: 10px; /* Ajuste en fonction de l'espace souhaité autour des éléments de la navbar */
+    padding: 20px; /* Ajuste en fonction de l'espace souhaité autour des éléments de la navbar */
     box-sizing: border-box;
     z-index: 1001; /* Assurez-vous que la navbar est au-dessus des autres éléments */
 }
 
 	
-	.nav-links li a {
-		color: rgb(255, 52, 52);
-	}
-	
-	.nav-links li:hover a {
-		color: rgb(255, 180, 180);
-		align-items: center;
-		margin-top: 17px;
-	}
-	
-	.nav-links li:hover {
-		border-color: #fc4e4eee;
-		background-color: rgba(255, 0, 0, 0.548);
-		align-items: center;
-		margin-top: 15px;
-	}
-	
-	.nav-links li {
-		margin: 10px 0; /* Ajuste en fonction de l'espace souhaité entre les éléments sur les petits écrans */
-		background-color: rgba(220, 20, 60, 0.267);
-		width: 100px;
-		border: solid rgba(255, 59, 59, 0.26) 3px;
-		border-radius: 10px;
-		text-align: center;
-		font-size: 17px;
-	}
+.nav-links li a {
+	color: rgb(255, 52, 52);
+}
+
+.nav-links li:hover a {
+	color: rgb(255, 180, 180);
+	align-items: center;
+	margin-top: 17px;
+}
+
+.nav-links li:hover {
+	border-color: #fc4e4eee;
+	background-color: rgba(255, 0, 0, 0.548);
+	align-items: center;
+	margin-top: 15px;
+}
+
+.nav-links li {
+	margin: 10px 0; /* Ajuste en fonction de l'espace souhaité entre les éléments sur les petits écrans */
+	background-color: rgba(220, 20, 60, 0.267);
+	width: 100px;
+	border: solid rgba(255, 59, 59, 0.26) 3px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.navbar .logo img{
+	width: 200%;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+
+.text-l {
+	color: white;
+	font-size: 30px;
+	display: block;
+}
+
+.nav-links ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar .nav-links ul li {
+	margin: 0 15px;
+	margin-top: 10px;
+}
 	
 	.navbar .logo img{
 		width: 200%;
@@ -81,13 +104,19 @@ body {
 		display: block;
 	}
 	
+	
+	.text-l {
+		color: white;
+		font-size: 30px;
+		display: block;
+	}
+	
 	.nav-links ul {
-		display: flex;
 		list-style: none;
 		margin: 0;
+		display: flex;
+		flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
 		padding: 0;
-		margin-right: -140px;
-		margin-top: -20px;
 	}
 	
 	.navbar .nav-links ul li {
@@ -139,21 +168,35 @@ input[type="text"], input[type="password"] {
   box-sizing: border-box;
 }
 
+.welcome-message {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.welcome-message h1 {
+  color: #d10000; /* Couleur rouge pour assortir au style du bouton */
+  margin-bottom: 20px;
+}
+
 .button-17 {
   background-color: #d10000;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 10px 15px;
   border: none;
   cursor: pointer;
-  width: 100%;
   border-radius: 5px;
-  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .button-17:hover {
-  background-color: #ba0000;
+  background-color: #ba0000; /* Un rouge légèrement plus foncé au survol */
 }
+
 
 .forgot-password {
   display: block;
@@ -274,7 +317,6 @@ footer {
 	}
 
 	.navbar .logo img{
-		width: 200%;
 		margin-top: 30px;
 	}
 
